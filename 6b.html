@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title>JavaScript Output Methods</title>
+    <script>
+        // 1. Using document.write()
+        document.write("<h3>Output using document.write()</h3>");
+        // 2. Using console.log()
+        console.log("This is an output in the browser console.");
+        // 3. Using alert()
+        function showAlert() {
+            alert("This is an alert box!");
+        }
+        // 4. Using innerHTML
+        function changeInnerHTML() {
+            document.getElementById("output").innerHTML = "Output changed using innerHTML!";
+        }
+        // 5. Using innerText
+        function changeInnerText() {
+            document.getElementById("textOutput").innerText = "Text changed using innerText!";
+        }
+    </script>
+</head>
+<body>
+    <h1>JavaScript Output Methods</h1>
+    <button onclick="showAlert()">Show Alert</button>  
+    <button onclick="changeInnerHTML()">Change innerHTML</button>
+    <button onclick="changeInnerText()">Change innerText</button>
+    <p id="output">This is a paragraph. Click the button to change its content using innerHTML.</p>
+    <p id="textOutput">This is another paragraph. Click the button to change its text using innerText.</p>
+</body>
+</html>
