@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title>Internal and External JavaScript Combined</title>
+</head>
+<body>
+    <h1>JavaScript Example</h1>
+    <button onclick="showMessage()">Click me for Internal JS</button>
+    <button onclick="externalMessage()">Click me for External JS</button>
+    <!-- Internal JavaScript -->
+    <script>
+        // This is internal JavaScript
+        function showMessage() {
+            alert("Hello from Internal JavaScript!");
+        }
+    </script>
+    <!-- External JavaScript -->
+    <script>
+        // This is external JavaScript code placed here inside the HTML file
+        function externalMessage() {
+            alert("Hello from External JavaScript!");
+        }
+    </script>
+</body>
+</html>
